@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currency Converter</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- The logo will stay here -->
+    <!-- <img src="logo.png"> -->
+    <!-- the image stops here -->
+<fieldset>
+ <div class="container">
+   <legend><h1>Currency Converter</h1></legend> 
+   <hr/>
+    <div class="input-container">
+      <input type="number" id="amount" placeholder="Enter amount">
+      <select id="fromCurrency">
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+        
+      </select>
+      <span>to</span>
+      <select id="toCurrency">
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+        
+      </select>
+      <button onclick="convertCurrency()">Convert</button>
+    </div>
+    <div id="result" class="result"></div>
+  </div>
+  <hr/>
+  <p>&copy; Copyright 2024 phylip's currency converter</p>
+</fieldset>
+ 
+  <script src="script.js"></script>
+</body>
+</html>
